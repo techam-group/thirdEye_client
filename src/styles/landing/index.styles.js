@@ -1,5 +1,8 @@
 import { makeStyles } from '@material-ui/core/styles'
 import LeadImage from '../../assets/dji_mavicpro.jpg'
+import DeployImage from '../../assets/drone_mission.jpg'
+import ControlImage from '../../assets/control.png'
+import MonitorImage from '../../assets/monitor.jpg'
 
 export const useStyles = makeStyles(theme => ({
   root: {
@@ -92,5 +95,91 @@ export const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'center',
     marginBottom: theme.spacing(17)
+  },
+  sme__flightDetails: {
+    width: '75%',
+    margin: '0 auto',
+
+    '& section': {
+      marginBottom: theme.spacing(4),
+
+      '& [data-sme-title]': {
+        color: '#373737',
+        fontWeight: 600
+      },
+
+      '& [data-sme-lead]': {
+        fontSize: '0.7rem',
+      }
+    }
+  },
+  sme__flightDetails_card: {
+    display: 'flex',
+    width: '100%',
+    marginBottom: theme.spacing(8),
+
+    '& .MuiCard-root': {
+      width: '35%',
+      display: 'flex',
+      alignItems: 'center',
+      color: 'grey',
+      borderTopLeftRadius: 0,
+      borderBottomLeftRadius: 0,
+
+      '& .MuiCardContent-root': {
+        '& h6': {
+          paddingBottom: theme.spacing(2),
+          color: '#4d4d4d'
+        },
+
+        '& p': {
+          fontSize: '0.89rem',
+          lineHeight: '1.78'
+        },
+
+        '& button': {
+          margin: '0 auto',
+          background: '#CE2D2D',
+          color: 'white',
+          borderRadius: 0,
+          marginTop: theme.spacing(1)
+        }
+      }
+    }
+  },
+  sme__flightDetails_deploy: {
+    '& [data-sme-image]': {
+      backgroundImage: `url(${DeployImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center',
+      backgroundRepeat: 'no-repeat',
+      width: '60%',
+      height: '18rem'
+    },
+  },
+  sme__flightDetails_monitor: {
+    '& [data-sme-image]': {
+      backgroundImage: `url(${MonitorImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center',
+      backgroundRepeat: 'no-repeat',
+      width: '60%',
+      height: '18rem'
+    },
+
+    '& .MuiCard-root': {
+      borderTopRightRadius: 0,
+      borderBottomRightRadius: 0,
+    }
+  },
+  sme__flightDetails_control: {
+    '& [data-sme-image]': {
+      backgroundImage: `url(${ControlImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center',
+      backgroundRepeat: 'no-repeat',
+      width: '60%',
+      height: '18rem'
+    },
   }
 }))
