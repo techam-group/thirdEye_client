@@ -103,6 +103,15 @@ export default () => {
         </Grid>
       </div>
 
+      <Grid item className={classes.sme__missions}>
+        <section data-sme-mission>
+          <Typography variant="h6">Get More From SmartEyes</Typography>
+          <Typography data-sme-lead>
+            SmartEyes missions, scheduled perimeter checks and health-mainteance protocols
+          </Typography>
+          <Button className={classes.button}>Go Missions</Button>
+        </section>
+      </Grid>
     </Grid>
   )
 }

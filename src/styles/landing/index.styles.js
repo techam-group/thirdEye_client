@@ -3,6 +3,7 @@ import LeadImage from '../../assets/dji_mavicpro.jpg'
 import DeployImage from '../../assets/drone_mission.jpg'
 import ControlImage from '../../assets/control.png'
 import MonitorImage from '../../assets/monitor.jpg'
+import MissionsImage from '../../assets/missions.jpg'
 
 export const useStyles = makeStyles(theme => ({
   root: {
@@ -181,5 +182,40 @@ export const useStyles = makeStyles(theme => ({
       width: '60%',
       height: '18rem'
     },
-  }
+  },
+  sme__missions: {
+    height: '100vh',
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'start',
+    alignItems: 'center',
+    paddingLeft: theme.spacing(8),
+    backgroundImage: `url(${MissionsImage})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundAttachment: 'fixed',
+
+    '& [data-sme-mission]': {
+      width: '35%',
+      color: '#D2D2D2',
+
+      '& h6': {
+        fontWeight: 600
+      },
+
+      '& [data-sme-lead]': {
+        fontSize: '0.8rem',
+        paddingBottom: theme.spacing(3)
+      },
+
+      '& button': {
+        backgroundColor: '#CE2D2D',
+
+        '&:hover': {
+          opacity: 0.7
+        }
+      }
+    }
+  },
 }))
