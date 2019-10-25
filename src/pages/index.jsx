@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Grid, Typography, Button, CssBaseline, Hidden, Paper, ListItem, IconButton, Card, CardHeader, CardContent, CardActionArea } from '@material-ui/core'
+import { Grid, Typography, Button, CssBaseline, Hidden, Paper, ListItem, IconButton, Card, CardContent } from '@material-ui/core'
 import { FlightTakeoff, TrackChanges, GpsFixed } from '@material-ui/icons'
 import clsx from 'clsx'
 import LandingHeader from '../components/header/LandingHeader'
