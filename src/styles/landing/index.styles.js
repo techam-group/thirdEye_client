@@ -218,4 +218,41 @@ export const useStyles = makeStyles(theme => ({
       }
     }
   },
+  sme__footer: {
+    padding: theme.spacing(2, 8),
+    backgroundColor: '#141821',
+
+    '& footer': {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      color: '#919191',
+
+      '& a': {
+        textDecoration: 'none',
+        color: '#CE2D2D'
+      },
+
+      '& button': {
+        background: '#CE2D2D',
+        color: 'white',
+        borderRadius: 0,
+
+        '&:hover': {
+          opacity: 0.7,
+          background: '#CE2D2D'
+        }
+      }
+    },
+
+    '& [data-sme-footerTitle]': {
+      flexGrow: 1,
+      textTransform: 'uppercase',
+      color: 'grey',
+
+      '& span': {
+        color: '#3c393d'
+      }
+    }
+  }
 }))

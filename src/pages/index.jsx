@@ -1,10 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Grid, Typography, Button, CssBaseline, Hidden, Paper, ListItem, IconButton, Card, CardHeader, CardContent, CardActionArea } from '@material-ui/core'
 import { FlightTakeoff, TrackChanges, GpsFixed } from '@material-ui/icons'
 import clsx from 'clsx'
 import LandingHeader from '../components/header/LandingHeader'
 
 import { useStyles } from '../styles/landing/index.styles'
+import moment from 'moment'
 
 export default () => {
   const classes = useStyles()
@@ -111,6 +113,22 @@ export default () => {
           </Typography>
           <Button className={classes.button}>Go Missions</Button>
         </section>
+      </Grid>
+
+      <Grid item className={classes.sme__footer}>
+        <footer>
+          <Link to="/">
+            <Typography variant="h6" data-sme-footerTitle>
+              Smart<span>Eyes</span>
+            </Typography>
+          </Link>
+
+          <span>
+            Built by <a href="https://twitter.com/tz_fayvor">Favour George</a> {moment().format('YYYY')}
+          </span>
+
+          <Button>Get in touch</Button>
+        </footer>
       </Grid>
     </Grid>
   )
