@@ -70,7 +70,7 @@ export default () => {
                 <Typography>
                   We take you through simple steps to deploy your first single SmartEye and to deploying a cluster of SmartEyes. All you need to know is carefully documented in simple communication.
                 </Typography>
-                <Button fullWidth>Learn More</Button>
+                <Button data-sme-button>Learn More</Button>
               </CardContent>
             </Card>
           </div>
@@ -83,7 +83,7 @@ export default () => {
                 <Typography>
                   Monitor SmartEyes once in the air, experience a whole new power over your data feed in real-time. Capture moments, save video streams and do a lot more.
                 </Typography>
-                <Button fullWidth>Learn More</Button>
+                <Button data-sme-button>Learn More</Button>
               </CardContent>
             </Card>
             <div data-sme-image />
@@ -98,7 +98,7 @@ export default () => {
                 <Typography>
                   Take control and pilot your crusade, SmartEyes auto-pilot can be disabled so you take your operations by the wheels. Do it your own way.
                 </Typography>
-                <Button fullWidth>Learn More</Button>
+                <Button data-sme-button>Learn More</Button>
               </CardContent>
             </Card>
           </div>

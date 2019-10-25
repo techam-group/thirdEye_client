@@ -143,7 +143,9 @@ export const useStyles = makeStyles(theme => ({
           background: '#CE2D2D',
           color: 'white',
           borderRadius: 0,
-          marginTop: theme.spacing(1)
+          marginTop: theme.spacing(2.5),
+          width: 'max-content',
+          padding: theme.spacing(0.8, 4)
         }
       }
     }
