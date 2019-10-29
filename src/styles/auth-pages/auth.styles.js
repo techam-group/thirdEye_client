@@ -1,12 +1,13 @@
 import { makeStyles } from "@material-ui/styles";
 import LoginImage from '../../assets/monitor.jpg'
+import SignupImage from '../../assets/dronedrop2019.jpg'
 
 export const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
   },
   imageHolder: {
-    backgroundImage: `url(${LoginImage})`,
+    backgroundImage: props => props.signup ? `url(${SignupImage})` : `url(${LoginImage})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center center',
@@ -23,6 +24,7 @@ export const useStyles = makeStyles(theme => ({
   },
   header: {
     marginBottom: '2rem',
+    textAlign: 'center',
 
     '& h6': {
       fontWeight: 600,

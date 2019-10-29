@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 import { Grid, Typography, Button, CssBaseline, Hidden, Paper, ListItem, IconButton, Card, CardContent } from '@material-ui/core'
 import { FlightTakeoff, TrackChanges, GpsFixed } from '@material-ui/icons'
 import clsx from 'clsx'
+import moment from 'moment'
 import LandingHeader from '../components/header/LandingHeader'
 
 import { useStyles } from '../styles/landing/index.styles'
-import moment from 'moment'
 
 export default () => {
   const classes = useStyles()
@@ -26,7 +26,9 @@ export default () => {
               future proof your security protocol
           </Typography>
             <div className={classes.spacer} />
-            <Button variant="contained" className={classes.button}>Get Started</Button>
+            <Link to="/sign-up">
+              <Button variant="contained" className={classes.button}>Get Started</Button>
+            </Link>
           </div>
         </Grid>
 
