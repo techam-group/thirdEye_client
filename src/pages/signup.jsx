@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import moment from 'moment'
 import { Grid, Typography, Hidden, CssBaseline, FormGroup, TextField, FormHelperText, Button } from '@material-ui/core'
-import { useStyles } from '../styles/auth-pages/login.styles'
+import { useStyles } from '../styles/auth-pages/auth.styles'
 import * as yup from 'yup'
 import { Formik } from 'formik'
 
