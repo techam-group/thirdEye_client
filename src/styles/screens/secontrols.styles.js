@@ -4,7 +4,7 @@ export const useStyles = makeStyles(theme => ({
   mainControl: {
     flexGrow: 1,
     width: '70%',
-    height: '55vh',
+    height: '30vh',
     backgroundColor: 'tomato',
 
     [theme.breakpoints.down("md")]: {

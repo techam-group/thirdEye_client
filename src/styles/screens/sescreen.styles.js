@@ -5,7 +5,14 @@ export const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     width: '70%',
     height: '55vh',
-    backgroundColor: 'blue',
+    backgroundColor: '#2d2d2d',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+
+    '& p': {
+      color: 'rgba(113, 113, 113, 0.87)'
+    },
 
     [theme.breakpoints.down("md")]: {
       width: '100%'

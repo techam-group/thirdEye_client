@@ -7,7 +7,7 @@ const SEScreen = () => {
 
   return (
     <Grid item className={classes.screenHolder}>
-      <p>screen view</p>
+      <p>launch your drone to display visuals</p>
     </Grid>
   )
 }
