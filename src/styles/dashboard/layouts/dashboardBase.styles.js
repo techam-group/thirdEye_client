@@ -17,12 +17,14 @@ export const useStyles = makeStyles(theme => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    paddingTop: theme.spacing(3),
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    minHeight: '100vh'
+    minHeight: '100vh',
+    display: 'flex',
+    // width: '100vw',
   },
   contentShift: {
     transition: theme.transitions.create('margin', {
@@ -30,5 +32,6 @@ export const useStyles = makeStyles(theme => ({
       duration: theme.transitions.duration.enteringScreen,
     }),
     marginLeft: drawerWidth,
+    // width: `calc(100vw - ${drawerWidth}px)`,
   },
 }))
