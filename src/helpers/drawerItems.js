@@ -2,11 +2,11 @@ import React from 'react'
 import { TrackChanges, FlightTakeoff, OndemandVideoOutlined, PersonalVideoOutlined, HomeOutlined, Build, HeadsetMic, DeleteSweep, Camera } from '@material-ui/icons'
 
 export const drawerItemsOne = [
-  {
-    name: 'My Dashboard',
-    to: '/dashboard',
-    icon: <HomeOutlined />
-  },
+  // {
+  //   name: 'My Dashboard',
+  //   to: '/dashboard',
+  //   icon: <HomeOutlined />
+  // },
   {
     name: 'Take Off',
     to: '/dashboard/take-off',
