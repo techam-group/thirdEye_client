@@ -1,12 +1,15 @@
 import React from 'react'
 import { Typography, Grid } from '@material-ui/core'
+import SMLayout from '../sm-layouts/SMLayout'
 
 const Profile = () => {
 
   return (
-    <Grid>
-      <Typography>Profile</Typography>
-    </Grid>
+    <SMLayout>
+      <Grid>
+        <Typography>Profile</Typography>
+      </Grid>
+    </SMLayout>
   )
 }
 

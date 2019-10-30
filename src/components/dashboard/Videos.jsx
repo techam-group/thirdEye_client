@@ -1,12 +1,15 @@
 import React from 'react'
 import { Typography, Grid } from '@material-ui/core'
+import SMLayout from '../sm-layouts/SMLayout'
 
 const Videos = () => {
 
   return (
-    <Grid>
-      <Typography>Videos</Typography>
-    </Grid>
+    <SMLayout>
+      <Grid>
+        <Typography>Videos</Typography>
+      </Grid>
+    </SMLayout>
   )
 }
 
