@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Grid } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 import { useStyles } from '../../styles/screens/secontrols.styles'
 
 const SEControls = () => {

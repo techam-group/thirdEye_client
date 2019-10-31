@@ -19,7 +19,6 @@ export const useStyles = makeStyles(theme => ({
       position: 'relative',
       '& > button': {
         position: 'absolute',
-        position: 'absolute',
         border: 'none',
         background: '#181d28',
         color: 'white',

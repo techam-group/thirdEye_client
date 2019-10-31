@@ -1,5 +1,5 @@
 import React from 'react'
-import { TrackChanges, FlightTakeoff, OndemandVideoOutlined, PersonalVideoOutlined, HomeOutlined, Build, HeadsetMic, DeleteSweep, Camera } from '@material-ui/icons'
+import { TrackChanges, FlightTakeoff, OndemandVideoOutlined, /* HomeOutlined, */ Build, HeadsetMic, DeleteSweep, Camera } from '@material-ui/icons'
 
 export const drawerItemsOne = [
   // {
