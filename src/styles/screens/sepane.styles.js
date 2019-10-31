@@ -133,5 +133,18 @@ export const useStyles = makeStyles(theme => ({
         color: '#acacac'
       }
     }
+  },
+  sepane__emergency: {
+    padding: '0 1rem 1rem',
+
+    '& button': {
+      backgroundColor: '#CE2D2D',
+      color: '#FEFEFE',
+      borderRadius: 0,
+
+      '&:hover': {
+        backgroundColor: '#B32424',
+      }
+    }
   }
 }))

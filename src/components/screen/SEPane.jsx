@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import clsx from 'clsx'
-import { Grid, Typography, Divider, InputLabel, FormGroup, IconButton, Input, InputAdornment } from '@material-ui/core'
+import { Grid, Typography, Divider, InputLabel, FormGroup, IconButton, Input, InputAdornment, Button } from '@material-ui/core'
 import { BatteryStd } from '@material-ui/icons'
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'
 import { useStyles } from '../../styles/screens/sepane.styles'
+import SEGallery from './SEGallery'
 
 const SEPane = () => {
   const classes = useStyles()
@@ -99,6 +100,12 @@ const SEPane = () => {
           </div>
         </FormGroup>
       </section>
+
+      <section className={classes.sepane__emergency}>
+        <Button fullWidth color="secondary">Emergency</Button>
+      </section>
+
+      <SEGallery />
     </Grid >
   )
 }
