@@ -5,7 +5,7 @@ export const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     width: '100%',
     height: '30%',
-    padding: '1rem 2rem',
+    padding: '0.2rem 2rem',
 
     [theme.breakpoints.down("md")]: {
       width: '100%'
@@ -15,8 +15,9 @@ export const useStyles = makeStyles(theme => ({
       display: 'flex',
       justifyContent: 'center',
       minWidth: '500px',
-      height: '300px',
+      height: '100%',
       position: 'relative',
+
       '& > button': {
         position: 'absolute',
         border: 'none',
@@ -24,7 +25,7 @@ export const useStyles = makeStyles(theme => ({
         color: 'white',
         height: '50px',
         width: '60px',
-        borderRadius: '10px',
+        borderRadius: '3px',
         '&:hover': { backgroundColor: '#1c2a39' }
       },
       '@media (max-width: 900px)': {
@@ -41,25 +42,28 @@ export const useStyles = makeStyles(theme => ({
         }
       },
       '& > .art': {
-        top: '10%',
-        left: '25%',
-        borderRadius: '30px 10px 10px 10px',
+        top: '2%',
+        left: '27%',
+        borderRadius: '24px 3px 3px 3px',
       },
       '& > .rt': {
-        top: '10%',
-        right: '25%',
-        borderRadius: '10px 30px 10px 10px',
+        top: '2%',
+        right: '27%',
+        borderRadius: '3px 24px 3px 3px',
       },
       '& > .fl': {
         bottom: '10%',
         left: '22%',
+        borderRadius: '3px 3px 3px 24px'
       },
       '& > .fr': {
         bottom: '10%',
         right: '22%',
+        borderRadius: '3px 3px 24px 3px'
       },
       '& > .emagency': {
-        bottom: '10%',
+        height: '38px',
+        bottom: 0,
         right: '0',
         left: '0',
         width: '34%',
@@ -67,25 +71,25 @@ export const useStyles = makeStyles(theme => ({
       },
       '& > .caption': {
         top: '30%',
-        left: '15%',
+        left: '20%',
         borderRadius: '30px 10px 10px 10px',
         margin: 'auto',
       },
       '& > .Stream': {
         top: '30%',
-        right: '15%',
+        right: '20%',
         borderRadius: '10px 30px 10px 10px',
         margin: 'auto',
       },
       '& > .center': {
-        height: '200px',
-        width: ' 200px',
+        height: '152px',
+        width: '165px',
         borderRadius: '50%',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         position: 'relative',
-        marginTop: '10px',
+
         '& > .line1': {
           height: '100%',
           width: '3px',
@@ -124,11 +128,12 @@ export const useStyles = makeStyles(theme => ({
             left: '0',
             right: '0',
             position: 'absolute',
-            height: '50px',
-            width: '50px',
+            height: '65px',
+            width: '65px',
             bottom: '0',
             zIndex: '5',
             borderRadius: '50%',
+            backgroundColor: '#181d28'
           },
           '& > .ring': {
             backgroundColor: '#181d28',
@@ -138,16 +143,16 @@ export const useStyles = makeStyles(theme => ({
             left: '0',
             right: '0',
             margin: 'auto',
-            height: '100px',
-            width: '100px',
+            height: '20px',
+            width: '20px',
             position: 'absolute',
             zIndex: '3',
           },
           '& > .l': {
             top: '0',
             left: '0',
-            height: '72px',
-            width: '63px',
+            height: '3rem',
+            width: '4rem',
             bottom: '0',
             borderRadius: '30px 0 0 30px',
           },
@@ -155,24 +160,24 @@ export const useStyles = makeStyles(theme => ({
             top: '0',
             right: '0',
             bottom: '0',
-            height: '72px',
-            width: '63px',
+            height: '3rem',
+            width: '4rem',
             borderRadius: '0 30px 30px 0',
           },
           '& > .u': {
             top: '0',
             right: '0',
             left: '0',
-            height: '63px',
-            width: '72px',
+            height: '4rem',
+            width: '3rem',
             borderRadius: '30px  30px 0 0',
           },
           '& > .d': {
             bottom: '0',
             right: '0',
             left: '0',
-            height: '63px',
-            width: '72px',
+            height: '4rem',
+            width: '3rem',
             borderRadius: '0 0 30px  30px',
           }
 
