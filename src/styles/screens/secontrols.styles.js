@@ -69,16 +69,16 @@ export const useStyles = makeStyles(theme => ({
         width: '34%',
         margin: 'auto',
       },
-      '& > .caption': {
-        top: '30%',
+      '& > .capture': {
+        top: '33%',
         left: '20%',
-        borderRadius: '30px 10px 10px 10px',
+        borderRadius: '16px 3px 3px 16px',
         margin: 'auto',
       },
-      '& > .Stream': {
-        top: '30%',
+      '& > .stream': {
+        top: '33%',
         right: '20%',
-        borderRadius: '10px 30px 10px 10px',
+        borderRadius: '3px 16px 16px 3px',
         margin: 'auto',
       },
       '& > .center': {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid } from '@material-ui/core'
+import { Grid, Button } from '@material-ui/core'
 import { useStyles } from '../../styles/screens/secontrols.styles'
 
 const SEControls = () => {
@@ -8,28 +8,28 @@ const SEControls = () => {
   return (
     <Grid item className={classes.mainControl}>
       <div>
-        <button className='art'>AR</button>
-        <button className='caption'>Capture</button>
-        <button className='Stream'>Stream</button>
-        <button className='rt'>Ro</button>
+        <Button className='art'>AR</Button>
+        <Button className='capture'>Capture</Button>
+        <Button className='stream'>Stream</Button>
+        <Button className='rt'>Ro</Button>
 
         <div className='center'>
           <div className='line1'></div>
           <div className='line2'></div>
           <div className='btns'>
-            <button className='l'> L </button>
-            <button className='r'> R</button>
-            <button className='c'>C</button>
+            <Button className='l'> L </Button>
+            <Button className='r'> R</Button>
+            <Button className='c'>C</Button>
             <div className='ring'></div>
-            <button className='u'>U</button>
-            <button className='d'>D</button>
+            <Button className='u'>U</Button>
+            <Button className='d'>D</Button>
           </div>
         </div>
 
 
-        <button className='fl'>FL</button>
-        <button className='emagency'>Emergency</button>
-        <button className='fr'>FR</button>
+        <Button className='fl'>FL</Button>
+        <Button className='emagency'>Emergency</Button>
+        <Button className='fr'>FR</Button>
       </div>
     </Grid>
   )
