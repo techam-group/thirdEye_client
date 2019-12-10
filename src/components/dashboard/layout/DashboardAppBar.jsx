@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
-import { AppBar, Toolbar, IconButton, Typography, InputBase, Badge, MenuItem, Menu, CssBaseline, } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton, Typography, MenuItem, Menu, CssBaseline, } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import MailIcon from '@material-ui/icons/Mail';
-import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 
 import { useStyles } from '../../../styles/dashboard/layouts/dashboardAppBar.styles'

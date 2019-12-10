@@ -3,8 +3,9 @@ import { makeStyles } from '@material-ui/core/styles'
 export const useStyles = makeStyles(theme => ({
   screenHolder: {
     flexGrow: 1,
-    width: '70%',
-    height: '55vh',
+    width: '100%',
+    height: '55%',
+    marginTop: '6.8rem',
     backgroundColor: '#2d2d2d',
     display: 'flex',
     justifyContent: 'center',
