@@ -45,11 +45,19 @@ export const useStyles = makeStyles(theme => ({
         top: '2%',
         left: '27%',
         borderRadius: '24px 3px 3px 3px',
+
+        '& svg': {
+          fontSize: '1.3rem'
+        }
       },
       '& > .rt': {
         top: '2%',
         right: '27%',
         borderRadius: '3px 24px 3px 3px',
+
+        '& svg': {
+          fontSize: '1.3rem'
+        }
       },
       '& > .fl': {
         bottom: '10%',
@@ -74,12 +82,20 @@ export const useStyles = makeStyles(theme => ({
         left: '20%',
         borderRadius: '16px 3px 3px 16px',
         margin: 'auto',
+
+        '& svg': {
+          color: '#f9f9f9'
+        }
       },
       '& > .stream': {
         top: '33%',
         right: '20%',
         borderRadius: '3px 16px 16px 3px',
         margin: 'auto',
+
+        '& svg': {
+          color: '#f9f9f9'
+        }
       },
       '& > .center': {
         height: '152px',
@@ -133,7 +149,11 @@ export const useStyles = makeStyles(theme => ({
             bottom: '0',
             zIndex: '5',
             borderRadius: '50%',
-            backgroundColor: '#181d28'
+            backgroundColor: '#181d28',
+
+            '& svg': {
+              fontSize: '1.3rem '
+            }
           },
           '& > .ring': {
             backgroundColor: '#181d28',
@@ -155,6 +175,11 @@ export const useStyles = makeStyles(theme => ({
             width: '4rem',
             bottom: '0',
             borderRadius: '30px 0 0 30px',
+
+            '& svg': {
+              fontSize: '1.3rem',
+              marginLeft: '-0.5rem'
+            }
           },
           '& > .r': {
             top: '0',
@@ -163,6 +188,11 @@ export const useStyles = makeStyles(theme => ({
             height: '3rem',
             width: '4rem',
             borderRadius: '0 30px 30px 0',
+
+            '& svg': {
+              fontSize: '1.3rem',
+              marginRight: '-0.5rem'
+            }
           },
           '& > .u': {
             top: '0',
@@ -171,6 +201,11 @@ export const useStyles = makeStyles(theme => ({
             height: '4rem',
             width: '3rem',
             borderRadius: '30px  30px 0 0',
+
+            '& svg': {
+              fontSize: '1.3rem',
+              marginTop: '-1rem'
+            }
           },
           '& > .d': {
             bottom: '0',
@@ -179,8 +214,12 @@ export const useStyles = makeStyles(theme => ({
             height: '4rem',
             width: '3rem',
             borderRadius: '0 0 30px  30px',
-          }
 
+            '& svg': {
+              fontSize: '1.3rem',
+              marginBottom: '-1rem'
+            }
+          }
         }
       }
     }
